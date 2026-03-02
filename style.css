@@ -3,7 +3,29 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+body {
+margin: 0;
+font-family: 'Fredericka the Great', ;
+background-color: #fff3e3; 
+color: #211919;
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+}
+.header h1 {
+font-size: 2.5rem;
+margin: 0;
+}
 
 .slider {
     position: relative;
@@ -26,7 +48,7 @@
     font-size: 24px;
 }
 
-/* Цвета для примера */
+
 .slider__slide:nth-child(1) { background: #c7b0b0; }
 .slider__slide:nth-child(2) { background: #b89c9c; }
 .slider__slide:nth-child(3) { background: #a98888; }
@@ -34,7 +56,6 @@
 .slider__arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     font-size: 30px;
     background: none;
     border: none;
@@ -48,3 +69,46 @@
 .slider__arrow--right {
     right: 10px;
 }
+.h2{
+    font-size: 48px;
+    font-weight: 400;
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.news_section {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.circle1 { background-color: #a67c7c; }
+.circle2 { background-color: #c7b0b0; }
+.circle3 { background-color: #b89c9c; }
+
+.square{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+.square1 { background-color: #A77C7C;}
+.square2 { background-color: #BDA2A2;}
+.square3 { background-color: #A77C7C;}
+}
+
+
+
+
+
+
+
+
+
+
+

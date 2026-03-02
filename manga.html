@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Blog - Kusuriya no Hitorigoto</title>
+    <style>
+        :root {
+            --bg-color: #fce4ec; /* Светло-розовый фон */
+            --block-bg: #c19b9b; /* Пыльно-розовый/коричневый для блоков */
+            --text-color: #3e2723; /* Темно-коричневый текст */
+            --white-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-logo {
+            font-size: 1.2rem;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: serif;
+            font-weight: normal;
+            font-size: 2rem;
+            color: #4a5d4d; /* Зеленоватый оттенок из заголовка */
+        }
+
+        /* Сетка для обложки и инфо */
+        .info-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .cover-img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .stats-table {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .stat-item {
+            background-color: var(--block-bg);
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            color: var(--text-color);
+        }
+
+        .stat-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 70px;
+        }
+
+        /* Секции заголовков (Plot, Manga Page и т.д.) */
+        .section-header {
+            background-color: var(--block-bg);
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin: 15px 0;
+            font-family: serif;
+            font-size: 1.5rem;
+        }
+
+        .content-box {
+            background-color: var(--block-bg);
+            border-radius: 15px;
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        .manga-page-img {
+            width: 100%;
+            border-radius: 10px;
+            background: white;
+            padding: 5px;
+        }
+
+        /* Рекомендации */
+        .tabs {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 10px;
+        }
+
+        .tab {
+            flex: 1;
+            background-color: var(--block-bg);
+            padding: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 5px;
+        }
+
+        .carousel {
+            background-color: var(--block-bg);
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .carousel-item {
+            width: 30%;
+            aspect-ratio: 2/3;
+            background-color: #eee;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .arrow {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="blog-logo">Library blog</div>
+        <h1>Kusuriya no Hitorigoto</h1>
+    </header>
+
+    <div class="info-section">
+        <img src="обложка.jpg" alt="Manga Cover" class="cover-img">
+        <div class="stats-table">
+            <div class="stat-item"><span class="stat-label">genre</span> detective, historical</div>
+            <div class="stat-item"><span class="stat-label">author</span> Natsu Hyuga, Itsuki Nanao</div>
+            <div class="stat-item"><span class="stat-label">illustrator</span> <span style="text-decoration: underline;">Nekokurage</span></div>
+            <div class="stat-item"><span class="stat-label">publisher</span> Square Enix</div>
+            <div class="stat-item"><span class="stat-label">publication</span> May 25, 2017</div>
+            <div class="stat-item"><span class="stat-label">volumes</span> 14</div>
+            <div class="stat-item"><span class="stat-label">chapter</span> 76</div>
+        </div>
+    </div>
+
+    <div class="section-header">plot</div>
+    <div class="content-box">
+        The setting of the light novel is a fictional country called Li, reminiscent of medieval China. 
+        The main heroine is 17-year-old Maomao, the adopted daughter of an apothecary, who is highly 
+        knowledgeable about medicines, diseases, and poisons... (текст далее)
+    </div>
+
+    <div class="section-header">a manga page</div>
+    <div style="background-color: var(--block-bg); padding: 10px; border-radius: 15px;">
+        <img src="страница_манги.jpg" alt="Manga Page" class="manga-page-img">
+    </div>
+
+    <div class="tabs">
+        <div class="tab">by the author</div>
+        <div class="tab">recommendations</div>
+    </div>
+
+    <div class="carousel">
+        <span class="arrow">&lt;</span>
+        <img src="rec1.jpg" class="carousel-item">
+        <img src="rec2.jpg" class="carousel-item">
+        <img src="rec3.jpg" class="carousel-item">
+        <span class="arrow">&gt;</span>
+    </div>
+</div>
+
+</body>
+</html>
