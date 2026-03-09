@@ -1,95 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<title>Library Blog </title>
-
-
-<div class="nav-bar">
-    <img src="">
-    <a href=""> Головна </a>
-    <h1> Library blog</h1>
-    <a href=""> calla>
-        <a href=""> telegram</a>
-        <a href=""> Зворотній зв'язок </a>
-
-</div>
-<div class="slider">
-
-    <!-- ліва стрілка -->
-    <button class="slider__arrow slider__arrow--left">
-        &lt;
-    </button>
-
-    <!-- слайди -->
-    <div> class="slider__track">
-
-        <div class="slider__slide">
-            <img src="">
-        </div>
-        <div class="slider__slide">
-            <img src="">
-        </div>
-        <div class="slider__slide">
-            <img src="">
-        </div>
-
-    </div>
-
-    <!-- права стрілка -->
-    <button class="slider__arrow slider__arrow--right">
-        &gt;
-    </button>
-    <div class="container">
-        <h2 class="welcome">Welcome to The Library</h2>
-        <div class="fantasy"> <a href="#">Fantasy</a></div>
-        <div class="comics"><a href="#">Comics</a></div>
-        <div class="manga"><a href="#">Manga</a></div>
-    </div>
-
-
-    <div class="container">
-        <div class="circle"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-    </div>
-
-    <div class="container">
-        <h2>News</h2>
-        <div class="square_news">
-            <div class="img_news"> <img src="#" alt="News Image"></div>
-            <p class="text">У порту Лондона відкрили унікальну бібліотеку на воді, розташовану на відреставрованому історичному судні. Відвідувачі можуть читати рідкісні видання, насолоджуючись краєвидами Темзи крізь панорамні ілюмінатори.</p>
-        </div>
-        <div class="square_news">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Donec auctor, nisl eget ultricies lacinia,
-                nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
-                Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam
-                nisl, eget aliquam nunc nisl eget nunc.</p>
-            <div class="img_news"> <img src="#" alt="News Image"></div>
-        </div>
-        <div class="square_news">
-            <div class="img_news"> <img src="#" alt="News Image"></div>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Donec auctor, nisl eget ultricies lacinia,
-                nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
-                Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam
-                nisl, eget aliquam nunc nisl eget nunc.</p>
-        </div>
-
-    </div>
-
-</div>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="feedbackform-style.css">
 </head>
+<body>
 
+<header class="nav-bar">
+    <div class="nav-left">
+        <img src="images/logo.png" alt="Logo" class="nav-logo">
+        <a href="index.html" class="nav-btn">Main</a>
+    </div>
+    <h1 class="nav-title">Library-blog</h1>
+    <div class="nav-right">
+        <a href="tel:+380534467090" class="nav-icon-link">
+            <img src="images/phone.svg" alt="Телефон">
+        </a>
+        <a href="#" class="nav-icon-link">
+            <img src="images/telegram.svg" alt="Telegram">
+        </a>
+        <a href="#feedback" class="nav-btn">Feedback</a>
+    </div>
+</header>
+
+<!-- Слайдер -->
+<div class="slider">
+    <button class="slider__arrow slider__arrow--left">&lt;</button>
+    <div class="slider__track">
+        <div class="slider__slide"><img src="images/books-slider-1.jpg" alt="Слайд 1"></div>
+        <div class="slider__slide"><img src="images/" alt="Слайд 2"></div>
+        <div class="slider__slide"><img src="images/" alt="Слайд 3"></div>
+    </div>
+    <button class="slider__arrow slider__arrow--right">&gt;</button>
+</div>
+
+<div class="container">
+
+    <h2 class="welcome">Welcome to The Library</h2>
+
+    <!-- Жанри — посилання на відповідні сторінки -->
+    <div class="genres">
+        <a href="fantasy.html" class="genre-block">Harry Potter</a>
+        <a href="comics.html" class="genre-block">Comics</a>
+        <a href="manga.html" class="genre-block">Manga</a>
+        <a href="#" class="genre-block"></a>
+    </div>
+
+    <!-- Автори — посилання на сторінку книги -->
+    <div class="authors">
+        <a href="fantasy.html" class="author-circle">J.K. Rowling</a>
+        <a href="manga.html" class="author-circle">Natsu Hyuga</a>
+        <a href="#" class="author-circle">Akihito Tsukushi</a>
+    </div>
+
+    <!-- Новини -->
+    <h2 class="news-title">News</h2>
+    <div class="news-section">
+
+        <div class="square_news">
+            <div class="img_news"><img src="images/" alt="Новина 1"></div>
+            <p class="text">У порту Лондона відкрили унікальну бібліотеку на воді, 
+                розташовану на відреставрованому історичному судні. 
+                Відвідувачі можуть читати рідкісні видання, насолоджуючись краєвидами 
+                Темзи крізь панорамні ілюмінатори.</p>
+        </div>
+
+        <div class="square_news">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Donec auctor, nisl eget ultricies lacinia,
+                nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam
+                nisl, eget aliquam nunc nisl eget nunc.</p>
+            <div class="img_news"><img src="images/" alt="Новина 2"></div>
+        </div>
+
+        <div class="square_news">
+            <div class="img_news"><img src="images/" alt="Новина 3"></div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Donec auctor, nisl eget ultricies lacinia,
+                nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam
+                nisl, eget aliquam nunc nisl eget nunc.</p>
+        </div>
+
+    </div>
+</div>
+
+<section class="feedback-section" id="feedback">
+    <h2>Зворотній зв'язок</h2>
+    <div class="feedback-form">
+
+        <div>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" placeholder="Введіть ваше ім'я">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Введіть ваш email">
+        </div>
+
+        <div>
+            <label for="message">Повідомлення</label>
+            <textarea id="message" placeholder="Напишіть ваше повідомлення..."></textarea>
+        </div>
+
+        <button type="button">Надіслати</button>
+
+    </div>
+</section>
 
 <footer>
     <div class="end">
         <h2 class="ending">Library-blog</h2>
         <a href="tel:+380534467090">+380534467090</a>
-        <div class="img-logos"><img src="images\phone.svg" alt=""></div>
-        <div class="img-logos"><img src="images\telegram.svg" alt=""></div>
+        <div class="footer-icons">
+            <div class="img-logos"><img src="images/phone.svg" alt="Телефон"></div>
+            <div class="img-logos"><img src="images/telegram.svg" alt="Telegram"></div>
+        </div>
         <p class="ending2">Copyright © 2026 Library-blog. All rights reserved.</p>
-
+    </div>
 </footer>
 
+<script src="main.js"></script>
+</body>
 </html>
