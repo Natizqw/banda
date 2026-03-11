@@ -13,7 +13,7 @@
 <body>
     <header class="nav-bar">
         <div class="nav-left">
-            <img src="images/logo.svg" alt="Logo" class="nav-logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo" class="nav-logo"></a>
             <a href="index.html" class="nav-btn">Main</a>
         </div>
         <h1 class="nav-title">Library-blog</h1>
@@ -36,7 +36,7 @@
 
         <div class="hero-section">
             <div class="cover-art">
-                <img src="images/" alt="Harry Potter Cover">
+                <img src="images/harry.png" alt="Harry Potter Cover">
             </div>
             <div class="details-table">
                 <div class="row"><strong>genre</strong> <span>Fantasy, Young Adult</span></div>
@@ -51,38 +51,65 @@
         <div class="content-card">
             <h3>The Hidden World of Harry Potter</h3>
             <p>The Hidden World of Harry Potter
-After years of being treated like a servant by the Dursleys, Harry Potter discovers he is the son of two powerful wizards. On his eleventh birthday, he is rescued by Rubeus Hagrid, the giant groundskeeper of Hogwarts, who reveals that Harry is famous throughout the wizarding world as "The Boy Who Lived"—the only person to ever survive a curse from the dark wizard, Lord Voldemort.
-Life at Hogwarts
-At Hogwarts School of Witchcraft and Wizardry, Harry finally finds a sense of belonging. He is sorted into Gryffindor House and becomes the youngest Seeker in a century for the school’s Quidditch team. Alongside his best friends, the loyal Ron Weasley and the brilliant Hermione Granger, Harry begins to master spells, brew potions, and navigate the moving staircases of the ancient castle.
-The Mystery of the Stone
-Harry and his friends discover a giant, three-headed dog named Fluffy guarding a secret trapdoor. They soon realize it hides the Philosopher’s Stone, a magical artifact that grants eternal life. To protect it from being stolen by Voldemort, the trio must brave three deadly magical trials:
-Devil’s Snare: A dangerous, strangling plant that only releases those who stay calm or use fire.
-Flying Keys: A room filled with thousands of enchanted keys where Harry must use his flying skills to catch the right one.
-Wizard’s Chess: A massive, violent game of chess where Ron must sacrifice himself as a piece to let Harry and Hermione move forward.</p>
-            <p style="margin-top: 8px;"><strong>The Final Reveal:</strong>In the end, Harry must face the true villain alone in the Underground Chambers. He discovers that courage and the protection of his mother's love are his greatest weapons, allowing him to keep the Stone safe and thwart the Dark Lord's return—at least for now.
+                After years of being treated like a servant by the Dursleys, Harry Potter discovers he is the son of two
+                powerful wizards. On his eleventh birthday, he is rescued by Rubeus Hagrid, the giant groundskeeper of
+                Hogwarts, who reveals that Harry is famous throughout the wizarding world as "The Boy Who Lived"—the
+                only person to ever survive a curse from the dark wizard, Lord Voldemort.
+                Life at Hogwarts
+                At Hogwarts School of Witchcraft and Wizardry, Harry finally finds a sense of belonging. He is sorted
+                into Gryffindor House and becomes the youngest Seeker in a century for the school’s Quidditch team.
+                Alongside his best friends, the loyal Ron Weasley and the brilliant Hermione Granger, Harry begins to
+                master spells, brew potions, and navigate the moving staircases of the ancient castle.
+                The Mystery of the Stone
+                Harry and his friends discover a giant, three-headed dog named Fluffy guarding a secret trapdoor. They
+                soon realize it hides the Philosopher’s Stone, a magical artifact that grants eternal life. To protect
+                it from being stolen by Voldemort, the trio must brave three deadly magical trials:
+                Devil’s Snare: A dangerous, strangling plant that only releases those who stay calm or use fire.
+                Flying Keys: A room filled with thousands of enchanted keys where Harry must use his flying skills to
+                catch the right one.
+                Wizard’s Chess: A massive, violent game of chess where Ron must sacrifice himself as a piece to let
+                Harry and Hermione move forward.</p>
+            <p style="margin-top: 8px;"><strong>The Final Reveal:</strong>In the end, Harry must face the true villain
+                alone in the Underground Chambers. He discovers that courage and the protection of his mother's love are
+                his greatest weapons, allowing him to keep the Stone safe and thwart the Dark Lord's return—at least for
+                now.
             </p>
         </div>
 
         <h2 class="ribbon-title">setting</h2>
         <div class="content-card">
-            <p>The story begins in the boring Muggle world at 4 Privet Drive where Harry Potter lives a miserable life in a cupboard under the stairs before he is whisked away to the magical world by a giant named Hagrid. Their first stop is the hidden Diagon Alley in London where Harry visits Gringotts Wizarding Bank to find his inheritance and buys his first wand at Ollivanders and a snowy owl named Hedwig. The final destination is the magnificent Hogwarts Castle an ancient and enchanted boarding school in the Scottish Highlands filled with moving staircases talking portraits and a Great Hall with a ceiling that looks like the night sky. The castle grounds also include the dangerous Forbidden Forest where dark creatures live and a massive Quidditch pitch where Harry flies his broomstick in high-speed matches. This magical setting serves as the backdrop where Harry Ron and Hermione attend classes like Potions and Charms while uncovering the dark secrets hidden deep within the school's stone walls.</p>
+            <p>The story begins in the boring Muggle world at 4 Privet Drive where Harry Potter lives a miserable life
+                in a cupboard under the stairs before he is whisked away to the magical world by a giant named Hagrid.
+                Their first stop is the hidden Diagon Alley in London where Harry visits Gringotts Wizarding Bank to
+                find his inheritance and buys his first wand at Ollivanders and a snowy owl named Hedwig. The final
+                destination is the magnificent Hogwarts Castle an ancient and enchanted boarding school in the Scottish
+                Highlands filled with moving staircases talking portraits and a Great Hall with a ceiling that looks
+                like the night sky. The castle grounds also include the dangerous Forbidden Forest where dark creatures
+                live and a massive Quidditch pitch where Harry flies his broomstick in high-speed matches. This magical
+                setting serves as the backdrop where Harry Ron and Hermione attend classes like Potions and Charms while
+                uncovering the dark secrets hidden deep within the school's stone walls.</p>
         </div>
 
         <h2 class="ribbon-title">Book pages</h2>
         <div class="pages-preview">
-            <img src="images/harry.png" alt="harry">
+            <img src="images/harry_book_pages.png" alt="harry">
         </div>
 
         <div class="tabs">
-            <span class="tab active">by the author</span>
-            <span class="tab">recommendations</span>
+            <span class="tab active" data-tab="author">By the author</span>
+            <span class="tab" data-tab="recommendations">Recommendations</span>
         </div>
-        <div class="books-slider">
-            <span class="arrow">❮</span>
-            <img src="images/" alt="HP2">
-            <img src="images/" alt="HP3">
-            <img src="images/" alt="HP4">
-            <span class="arrow">❯</span>
+
+        <div class="books-panel" id="tab-author">
+            <img src="images\fantasy_author1.png" alt="By the author 1">
+            <img src="images\fantasy_author2.png" alt="By the author 2">
+            <img src="images\fantasy_author3.png" alt="By the author 3">
+        </div>
+
+        <div class="books-panel hidden" id="tab-recommendations">
+            <img src="images\fantasy_rec1.png" alt="Recommendation 1">
+            <img src="images\fantasy_rec2.png" alt="Recommendation 2">
+            <img src="images\fantasy_rec3.png" alt="Recommendation 3">
         </div>
 
     </div>
@@ -122,7 +149,7 @@ Wizard’s Chess: A massive, violent game of chess where Ron must sacrifice hims
             <p class="ending2">Copyright © 2026 Library-blog. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

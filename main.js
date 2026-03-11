@@ -25,3 +25,23 @@ if (track && slides.length > 0) {
     // перераховує позицію якщо змінився розмір вікна
     window.addEventListener('resize', updateSlider);
 }
+
+// перемикання вкладок по автору та рекомендовані
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+        // знімає active з усіх табів
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        // ставить active на клікнутий
+        tab.classList.add('active');
+
+        // ховає всі panels
+        document.querySelectorAll('.books-panel').forEach(function(panel) {
+            panel.classList.add('hidden');
+        });
+        // показує потрібну panel за data-tab
+        const target = tab.getAttribute('data-tab');
+        document.getElementById('tab-' + target).classList.remove('hidden');
+    });
+});

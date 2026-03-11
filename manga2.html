@@ -14,7 +14,7 @@
 
     <header class="nav-bar">
         <div class="nav-left">
-            <img src="images/logo.svg" alt="Logo" class="nav-logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo" class="nav-logo"></a>
             <a href="index.html" class="nav-btn">Main</a>
         </div>
         <h1 class="nav-title">Library-blog</h1>
@@ -33,12 +33,11 @@
 
         <div class="page-header">
             <h2 class="main-title" style="color: #e6ee77;">Made in Abyss</h2>
-            <p class="sub-title">The Apothecary Diaries</p>
         </div>
 
         <div class="hero-section">
             <div class="cover-art">
-                <img src="images/manga.png" alt="Kusuriya no Hitorigoto Cover">
+                <img src="images/manga2.png" alt="Made in Abyss Cover">
             </div>
             <div class="details-table">
                 <div class="row"><strong>Genre</strong> <span>adventure, fantasy, horror, drama, steampunk</span></div>
@@ -52,7 +51,11 @@
         <h2 class="ribbon-title">Plot</h2>
         <div class="content-card">
             <h3>Riko, an orphan and the main protagonist</h3>
-            <p>lives in an orphanage in the city of Orth, which is built on the cliffs surrounding a massive Abyss—a place harboring many secrets, natural wonders, and ancient artifacts. During an expedition to the upper layers of the Abyss, she discovers a mysterious artifact: a robot with the appearance of a young boy. Riko names him Reg and hides him in the orphanage, where he pretends to be an ordinary child with mechanical prosthetics.</p>
+            <p>lives in an orphanage in the city of Orth, which is built on the cliffs surrounding a massive Abyss—a
+                place harboring many secrets, natural wonders, and ancient artifacts. During an expedition to the upper
+                layers of the Abyss, she discovers a mysterious artifact: a robot with the appearance of a young boy.
+                Riko names him Reg and hides him in the orphanage, where he pretends to be an ordinary child with
+                mechanical prosthetics.</p>
             <p style="margin-top: 8px;">She is kidnapped and sold as a maid to the imperial palace, where her expertise
                 catches the attention of the chief eunuch Renshi, and she becomes a personal poison taster
                 for the emperor's senior consorts.</p>
@@ -67,19 +70,23 @@
 
         <h2 class="ribbon-title">Manga page</h2>
         <div class="pages-preview">
-            <img src="images/manga_book_pages.png" alt="Manga Page">
+            <img src="images\manga2-pages.png" alt="Manga Page">
         </div>
 
         <div class="tabs">
-            <span class="tab active">By the author</span>
-            <span class="tab">Recommendations</span>
+            <span class="tab active" data-tab="author">By the author</span>
+            <span class="tab" data-tab="recommendations">Recommendations</span>
         </div>
-        <div class="books-slider">
-            <span class="arrow">❮</span>
-            <img src="images/" alt="Recommendation 1">
-            <img src="images/" alt="Recommendation 2">
-            <img src="images/" alt="Recommendation 3">
-            <span class="arrow">❯</span>
+
+        <div class="books-panel" id="tab-author">
+            <img src="images\manga_2_author1.png" alt="By the author 1">
+            <img src="images\manga_2_author2.png" alt="By the author 2">
+        </div>
+
+        <div class="books-panel hidden" id="tab-recommendations">
+            <img src="images\manga_2_rec1.png" alt="Recommendation 1">
+            <img src="images\manga_2_rec2.png" alt="Recommendation 2">
+            <img src="images\manga_2_rec3.png" alt="Recommendation 3">
         </div>
 
     </div>
@@ -119,7 +126,7 @@
             <p class="ending2">Copyright © 2026 Library-blog. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
