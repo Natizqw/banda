@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Blog — Comics</title>
+    <title>Library Blog — Saga</title>
     <link rel="stylesheet" href="style-books.css">
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="feedbackform-style.css">
@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <header class="nav-bar">
         <div class="nav-left">
-            <img src="images/logo.svg" alt="Logo" class="nav-logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo" class="nav-logo"></a>
             <a href="index.html" class="nav-btn">Main</a>
         </div>
         <h1 class="nav-title">Library-blog</h1>
@@ -34,60 +34,75 @@
     <div class="page-wrapper">
 
         <div class="page-header">
-            <p class="blog-name">Library-blog</p>
-            <h2 class="main-title" style="color: #3a5a7a;">Comic Title</h2>
-            <p class="sub-title">Series subtitle goes here</p>
+            <h2 class="main-title" style="color: #b05a2a;">SAGA</h2>
+            <p class="sub-title">Volume 1</p>
         </div>
 
         <div class="hero-section">
             <div class="cover-art">
-                <img src="images/" alt="Comic Cover">
+                <img src="images/saga.jpg" alt="Saga Cover">
             </div>
             <div class="details-table">
-                <div class="row"><strong>genre</strong> <span>Genre placeholder</span></div>
-                <div class="row"><strong>author</strong> <span>Author placeholder</span></div>
-                <div class="row"><strong>artist</strong> <span>Artist placeholder</span></div>
-                <div class="row"><strong>publisher</strong> <span>Publisher placeholder</span></div>
-                <div class="row"><strong>publication</strong> <span>Year placeholder</span></div>
-                <div class="row"><strong>volumes</strong> <span>0</span></div>
-                <div class="row"><strong>issues</strong> <span>0</span></div>
+                <div class="row"><strong>genre</strong> <span>Sci-Fi, Fantasy, Adventure</span></div>
+                <div class="row"><strong>author</strong> <span>Brian K. Vaughan</span></div>
+                <div class="row"><strong>artist</strong> <span>Fiona Staples</span></div>
+                <div class="row"><strong>publisher</strong> <span>Image Comics</span></div>
+                <div class="row"><strong>publication</strong> <span>March 14, 2012</span></div>
+                <div class="row"><strong>volumes</strong> <span>11</span></div>
+                <div class="row"><strong>issues</strong> <span>66</span></div>
             </div>
         </div>
 
         <h2 class="ribbon-title">plot</h2>
         <div class="content-card">
-            <h3>Story title placeholder</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor nisl eget ultricies
-                lacinia. Nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Suspendisse potenti.</p>
-            <p style="margin-top: 8px;"><strong>Key moment:</strong> Lorem ipsum dolor sit amet placeholder text.</p>
+            <h3>A Family on the Run Across the Universe</h3>
+            <p>Saga tells the story of Alana and Marko, two soldiers from opposite sides of a never-ending
+                galactic war who fall in love and have a child together. Their daughter Hazel is born during
+                a desperate escape — and narrates the story from some point in her future.</p>
+            <p style="margin-top: 8px;">Their home planets, Landfall and its moon Wreath, have been at war for
+                generations.
+                Rather than fight directly, both sides now wage proxy wars across the galaxy.
+                When Alana and Marko's union is discovered, both governments send deadly agents to hunt them down.</p>
+            <p style="margin-top: 8px;"><strong>Key conflict:</strong> Can a family survive a universe determined to
+                tear them apart?</p>
         </div>
 
         <h2 class="ribbon-title">setting</h2>
         <div class="content-card">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The story takes place in a world
-                where placeholder description of the setting goes here. Donec auctor, nisl eget ultricies
-                lacinia, nunc nisl aliquam nisl.</p>
+            <p>The story spans dozens of alien worlds, space stations, and uncharted planets.
+                Landfall is a massive technologically advanced planet whose inhabitants have wings.
+                Its moon Wreath is home to a magical culture whose people have horns.</p>
+            <p style="margin-top: 8px;">The galaxy is crowded with mercenaries, royalty, ghosts, giant tortoises used as
+                spaceships, and tabloid journalists — all of whom cross paths with the young family
+                as they search for a safe place to raise their daughter.</p>
         </div>
 
         <h2 class="ribbon-title">comic page</h2>
         <div class="pages-preview">
-            <img src="images/" alt="Comic Page">
+            <img src="images/saga-page.jpg" alt="Saga Comic Page">
         </div>
 
         <div class="tabs">
-            <span class="tab active">by the author</span>
-            <span class="tab">recommendations</span>
+            <span class="tab active" data-tab="author">By the author</span>
+            <span class="tab" data-tab="recommendations">Recommendations</span>
         </div>
-        <div class="books-slider">
-            <span class="arrow">❮</span>
-            <img src="images/" alt="Recommendation 1">
-            <img src="images/" alt="Recommendation 2">
-            <img src="images/" alt="Recommendation 3">
-            <span class="arrow">❯</span>
+
+        <div class="books-panel" id="tab-author">
+            <img src="images\comics_author.jpg" alt="By the author 1">
+            <img src="images\comics_author2.jpg" alt="By the author 2">
+            <img src="images\comics_author3.jpg" alt="By the author 3">
+        </div>
+
+        <div class="books-panel hidden" id="tab-recommendations">
+            <img src="images\comics_rec1.jpg" alt="Recommendation 1">
+            <img src="images\comics1.jpg" alt="Recommendation 2">
+            <img src="images\comics2.jpg" alt="Recommendation 3">
+            <img src="images\comics3.jpg" alt="Recommendation 3">
         </div>
 
     </div>
 
+    <!-- FEEDBACK FORM -->
     <section class="feedback-section" id="feedback">
         <h2>Зворотній зв'язок</h2>
         <div class="feedback-form">
@@ -112,6 +127,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="end">
             <h2 class="ending">Library-blog</h2>
@@ -123,7 +139,7 @@
             <p class="ending2">Copyright © 2026 Library-blog. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
